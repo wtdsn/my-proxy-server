@@ -1,6 +1,7 @@
 const express = require('express')
 const http = require('http')
 const app = express()
+const { resolve } = require('path')
 
 let options = {
   method: "GET",
@@ -28,10 +29,10 @@ app.get('/get', async (req, res) => {
 })
 
 // 设置静态资源
-app.use('/', express.static('../client'))
+app.use('/', express.static(resolve(__dirname,'../client')))
 
 app.listen(3000, () => {
-  console.log('visit at:localhost:3000')
+  console.log('proxy at:localhost:3000')
 })
 
 
