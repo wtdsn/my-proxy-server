@@ -26,5 +26,5 @@ app.get('/get', (req, res) => {
 })
 
 app.listen(3001, () => {
-  console.log(3001);
+  console.log('server at:localhost:3000')
 })

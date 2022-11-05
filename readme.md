@@ -4,6 +4,7 @@
 ### 项目结构
 ```
 proxy
+├─ command.bat    // 批处理文件 ，运行 cmd 目录启动项目
 ├─ client    // 页面资源文件
 │  ├─ index.html
 │  └─ js
@@ -22,7 +23,9 @@ proxy
 
 
 ### 运行
-分别进入 proxy 和 server 目录文件下 ， 通过 node 执行 app.js 文件
+- 双击目录下的 command.bat 文件
+
+- 分别进入 proxy 和 server 目录文件下 ， 通过 node 执行 app.js 文件
 `node ./app.js`
 
 proxy server 会运行在 localhost:3000 上

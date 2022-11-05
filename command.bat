@@ -1,0 +1,1 @@
+start cmd /k node ./proxy/app.js & node ./server/app.js
